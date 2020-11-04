@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forgot.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+</head>
+<body>
+    <div class="forgot">
+        <form>
+            <h2 align="center" style="color: #fff;">Forgot password</h2>
+            <h5 style="font-size: 14px; color: yellow;">Enter email here that you used for your account. We will send a link to your email to reset your password.</h5>
+            <input type="text" name="username" placeholder="Enter your email" /><br /><br />
+            <input type="button" value="send" onclick="myFunction()"/><br /><br />
+            <a href="index.html" style="text-decoration: none;">Go back to Home page</a><br /><br />
+            <div id="snackbar">Link send to your email successfully!</div>
+            <script>
+                function myFunction(){
+                    var x = document.getElementById("snackbar");
+                    x.className="show";
+                    setTimeout(function(){ x.className =
+                    x.className.replace("show","");}, 3000);
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>
